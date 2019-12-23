@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style/reset.css">
+  <!-- include icomoon -->
+  <link rel="stylesheet" href="./icon/style.css">
+  <!-- include swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- include aos -->
+  <link rel="stylesheet" href="./style/aos.css">
+  <!-- include animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Thomas Portfolio | FrontEnd Development</title>
+</head>
+
+<body>
+
+  <!-- page1-header-->
+  <header id="home" class="home">
+    <div class="top-subtitle">
+      <h2>thomas</h2>
+      <h2>portfolio</h2>
+      <p>Welcome To My Work</p>
+      <p>Web Design - FrontEnd Development</p>
+      <a href="#about" id="arrow" class="animated infinite bounce delay-2s"
+         style="background-image: url('./image/arrow.png');"></a>
+    </div>
+  </header>
+
+  <div class="main">
+    <!-- aside-nav -->
+    <aside id="aside" class="aside">
+      <nav class="nav clearfix">
+        <input type="checkbox" id="nav" name="checkbox" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo"><a href="#home"><img src="./image/text.png" alt="logo">homas</a></div>
+        <div class="nav-wraper clearfix">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- page2-about -->
+    <section id="about" class="about" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500"
+             data-aos-offset="0">
+      <h1>about</h1>
+      <i class="top-line"></i>
+      <div class="item">
+        <div class="artical">
+          <p>Hi,I am Thomas</p>
+          <p>在職業生涯中,轉入前端領域.</p>
+          <p>經歷許多挫折還是不斷學習與研究,期許自己在未來可以朝著工程師目標前進.</p>
+        </div>
+        <div class="btn"><a href="https://www.cakeresume.com/s---D6Bl1UUCj3leoEXwuIBJA--/thomas-552483">resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- page3-skill -->
+    <section id="skill" class="skill" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500"
+             data-aos-offset="0">
+      <h1>skill</h1>
+      <i class="top-line"></i>
+      <div class="row">
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3>Front-End Skills</h3>
+                <div class="icon popover">
+                  <i class="icon-html5"></i>
+                  <span class="popover-content">html5</span>
+                </div>
+                <div class="icon  popover">
+                  <i class="icon-css3"></i>
+                  <span class="popover-content">css3</span>
+                </div>
+                <div class="icon  popover">
+                  <i class="icon-javascript"></i>
+                  <span class="popover-content">javascript</span>
+                </div>
+                <div class="icon  popover">
+                  <i class="icon-sass"></i>
+                  <span class="popover-content">sass/scss</span>
+                </div>
+                <div class="icon  popover">
+                  <i class="icon-bootstrap"></i>
+                  <span class="popover-content">bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3>Tools & Others</h3>
+
+                <div class="icon  popover">
+                  <i class="icon-googlechrome"></i>
+                  <span class="popover-content">chrome</span>
+                </div>
+                <div class="icon  popover">
+                  <i class="icon-git"></i>
+                  <span class="popover-content">git</span>
+                </div>
+                <div class="icon  popover">
+                  <i class="icon-github"></i>
+                  <span class="popover-content">github</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- page4-project -->
+    <section id="project" class="project" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500"
+             data-aos-offset="0">
+      <h1>project</h1>
+      <i class="top-line"></i>
+      <div class="row">
+
+        <div class="col-item">
+          <div class="resume-link">
+            <a href="https://thomas-2019.github.io/Create-Website/Architect%20examples/"><img src="./image/p-1.jpg"
+                   alt=""></a>
+            <span>Architect examples-網頁切板</span>
+          </div>
+        </div>
+
+        <div class="col-item">
+          <div class="resume-link">
+            <a href="https://thomas-2019.github.io/Personal-Website/ToDoList%20Web/"><img src="./image/p-2.jpg"
+                   alt=""></a>
+            <span>To Do List-Bootstrap樣式</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- page5-contact -->
+    <section id="contact" class="contact" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500"
+             data-aos-offset="0">
+      <h1>contact</h1>
+      <i class="top-line"></i>
+      <div class="row">
+        <div class="img"></div>
+        <p>洪國元/<img src="./image/text.png" alt="logo">homas</p>
+        <i class="icon-mobile">:0919-217421</i>
+      </div>
+
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="row">
+        <span>Thomas Portfolio &copy; 2019 Copyright <a href="https://github.com/Thomas-2019"><i
+               class="icon-github"></i></a></span>
+      </div>
+    </footer>
+    <!-- loading -->
+    <div class="loader"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="./js/dist/aos.js"></script>
+  <script src="./js/all.js"></script>
+</body>
+
+</html>
