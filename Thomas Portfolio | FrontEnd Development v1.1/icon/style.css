@@ -1,19 +1,20 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jr76it');
-  src:  url('fonts/icomoon.eot?jr76it#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jr76it') format('truetype'),
-    url('fonts/icomoon.woff?jr76it') format('woff'),
-    url('fonts/icomoon.svg?jr76it#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?329otk");
+  src: url("fonts/icomoon.eot?329otk#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?329otk") format("truetype"),
+    url("fonts/icomoon.woff?329otk") format("woff"),
+    url("fonts/icomoon.svg?329otk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
+  font-family: "icomoon" !important;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -68,6 +69,10 @@
 .icon-html5:before {
   content: "\e907";
   color: #e34f26;
+}
+.icon-file-text2:before {
+  content: "\e926";
+  /* color: #1572b6; */
 }
 .icon-point-up:before {
   content: "\ea03";

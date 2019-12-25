@@ -27,13 +27,16 @@ body {
 }
 
 .subtitle {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: $--Fz * 2;
   font-style: italic;
   font-weight: 600;
 }
 
+.page {
+  min-width: 500px;
+}
 @mixin background-set($width, $height, $color, $image, $position, $size) {
   background: {
     color: $color;
@@ -208,7 +211,136 @@ header {
   }
 }
 /*==========skill==========*/
+.Skill {
+  .carousel-item {
+    height: 400px;
+    overflow: hidden;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $--DarkColor;
+    text-align: center;
 
+    li {
+      list-style: none;
+      background-color: rgba($color: #fff, $alpha: 0.5);
+      border-radius: 10px;
+      transition: all 1s ease;
+      &:hover {
+        box-shadow: $--Shadow;
+        background-color: rgba($color: #fff, $alpha: 1);
+      }
+    }
+    .icon-github {
+      color: #000;
+    }
+    i {
+      font-size: $--Fz * 3;
+    }
+  }
+}
+/*==========Project==========*/
+.Project {
+  .project-card {
+    position: relative;
+    width: 500px;
+    height: 338px;
+    overflow: hidden;
+    box-shadow: $--Shadow;
+    &:hover {
+      .poster {
+        &::before {
+          bottom: 0;
+        }
+        img {
+          transform: translateY(-50px);
+        }
+      }
+      .details {
+        bottom: 0;
+      }
+      .info {
+        bottom: 0;
+      }
+    }
+    .poster {
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -85%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, $--DarkColor);
+        z-index: 1;
+        transition: 1s ease;
+      }
+      img {
+        width: 100%;
+        display: block;
+        bottom: 50px;
+        transition: 0.5s;
+      }
+    }
+    .details {
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      bottom: -250px;
+      left: 0;
+      overflow: hidden;
+      transition: 1s ease;
+      padding: 10px;
+      z-index: 2;
+      h4 {
+        color: $--LightColor;
+        font-size: $--Fz * 1.5;
+        a {
+          text-decoration: none;
+        }
+        .icon-github {
+          color: $--LightColor;
+          font-size: $--Fz * 1.5;
+          &:hover {
+            color: #4285f4;
+          }
+        }
+      }
+    }
+    .info {
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      bottom: -100%;
+      left: 0;
+      overflow: hidden;
+      transition: 1s ease;
+      padding: 10px;
+      z-index: 1;
+      li {
+        list-style: none;
+        color: $--LightColor;
+        font-size: $--Fz * 1.2;
+        .icon-file-text2 {
+          padding-right: 10px;
+          margin-bottom: 10px;
+          display: inline-block;
+          font-size: $--Fz * 1.2;
+        }
+      }
+    }
+  }
+}
 .loader {
   width: 100%;
   height: 100vh;

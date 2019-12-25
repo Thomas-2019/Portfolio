@@ -15,16 +15,16 @@ body {
   color: #232323;
 }
 
-.container {
-  padding: 30px 0;
-}
-
 .subtitle {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 32px;
   font-style: italic;
   font-weight: 600;
+}
+
+.page {
+  min-width: 500px;
 }
 
 /*==========nav==========*/
@@ -204,6 +204,160 @@ header .inset {
   list-style: none;
   width: 25%;
   height: 50px;
+}
+
+/*==========skill==========*/
+.Skill .carousel-item {
+  height: 400px;
+  overflow: hidden;
+}
+
+.Skill .carousel-caption {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #232323;
+  text-align: center;
+}
+
+.Skill .carousel-caption li {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.Skill .carousel-caption li:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
+          box-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
+  background-color: white;
+}
+
+.Skill .carousel-caption .icon-github {
+  color: #000;
+}
+
+.Skill .carousel-caption i {
+  font-size: 48px;
+}
+
+/*==========Project==========*/
+.Project .project-card {
+  position: relative;
+  width: 500px;
+  height: 338px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
+          box-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
+}
+
+.Project .project-card:hover .poster::before {
+  bottom: 0;
+}
+
+.Project .project-card:hover .poster img {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.Project .project-card:hover .details {
+  bottom: 0;
+}
+
+.Project .project-card:hover .info {
+  bottom: 0;
+}
+
+.Project .project-card .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.Project .project-card .poster::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -85%;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#232323));
+  background: linear-gradient(0deg, #232323);
+  z-index: 1;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.Project .project-card .poster img {
+  width: 100%;
+  display: block;
+  bottom: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Project .project-card .details {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  bottom: -250px;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  padding: 10px;
+  z-index: 2;
+}
+
+.Project .project-card .details h4 {
+  color: #fafafa;
+  font-size: 24px;
+}
+
+.Project .project-card .details h4 a {
+  text-decoration: none;
+}
+
+.Project .project-card .details h4 .icon-github {
+  color: #fafafa;
+  font-size: 24px;
+}
+
+.Project .project-card .details h4 .icon-github:hover {
+  color: #4285f4;
+}
+
+.Project .project-card .info {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  bottom: -100%;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  padding: 10px;
+  z-index: 1;
+}
+
+.Project .project-card .info li {
+  list-style: none;
+  color: #fafafa;
+  font-size: 19.2px;
+}
+
+.Project .project-card .info li .icon-file-text2 {
+  padding-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 19.2px;
 }
 
 .loader {
