@@ -1,21 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 /*===============================*/
 
 /*預設*/
 $--PrimaryColor: #f97f51;
 $--LightColor: #fafafa;
+$--BgColor: #ebeae9;
 $--DarkColor: #232323;
+$--Shadow: 0 3px 5px
+  rgba(
+    $color: $--DarkColor,
+    $alpha: 0.5
+  );
 $--Fz: 16px;
+
 html {
   scroll-behavior: smooth; /*錨點滑動*/
 }
 
 body {
   line-height: 1.4;
-  font-family: "Roboto", sans-serif;
-  background-color: #ebeae9;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  background-color: $--BgColor;
   color: $--DarkColor;
+}
+
+.subtitle {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: $--Fz * 2;
+  font-style: italic;
+  font-weight: 600;
 }
 
 @mixin background-set($width, $height, $color, $image, $position, $size) {
@@ -51,6 +67,7 @@ body {
     padding-left: $--Fz * 0.9;
     color: $--DarkColor;
     font-size: $--Fz * 1.2;
+    font-weight: 600;
   }
 }
 
@@ -69,27 +86,28 @@ body {
 /*==========header==========*/
 header {
   .top-title {
-    color: $--DarkColor;
-    top: 0px;
-    left: 0px;
-    letter-spacing: 5px;
     z-index: 2;
-    font-style: italic;
-    text-shadow: 0 3px 5px rgba($color: $--DarkColor, $alpha: 0.5);
+    h1 {
+      font-weight: 800;
+      color: $--LightColor;
+      top: 0px;
+      left: 0px;
+      letter-spacing: 5px;
+      font-style: italic;
+      text-shadow: $--Shadow;
+    }
   }
   .carousel-caption {
-    color: $--DarkColor;
-    font-style: italic;
     right: 300px;
     bottom: 50px;
     left: 0;
-    text-shadow: 0 3px 5px rgba($color: $--DarkColor, $alpha: 0.5);
-    letter-spacing: 5px;
-  }
-  .polygon {
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    h1 {
+      font-weight: 800;
+      color: $--LightColor;
+      font-style: italic;
+      text-shadow: $--Shadow;
+      letter-spacing: 5px;
+    }
   }
   .arrow {
     color: $--DarkColor;
@@ -126,6 +144,70 @@ header {
     clip-path: inset(10px 20px 30px 10px round 400px 50px 400px 0);
   }
 }
+
+/*==========about==========*/
+.About {
+  .icon-cross {
+    font-size: $--Fz * 1.5;
+  }
+  .about-shadow {
+    width: 100%;
+    height: 100%;
+    background: #e9e2d0;
+    box-shadow: $--Shadow;
+  }
+  .about-card {
+    width: 400px;
+    background: #262626;
+    box-sizing: border-box;
+    transition: 0.5s;
+    &:hover {
+      ul {
+        height: 50px;
+      }
+      img {
+        transform: scale(1.3);
+      }
+    }
+    .imgBx {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      img {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        transition: 5s;
+        transform-origin: 50% 50%;
+      }
+    }
+    a {
+      line-height: 50px;
+      background-color: $--LightColor;
+      color: $--DarkColor;
+      font-size: $--Fz * 2;
+      &:hover {
+        background-color: $--DarkColor;
+        color: $--LightColor;
+      }
+    }
+    ul {
+      width: 100%;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    li {
+      list-style: none;
+      width: 25%;
+      height: 50px;
+    }
+  }
+}
+/*==========skill==========*/
 
 .loader {
   width: 100%;
