@@ -77,11 +77,12 @@ header {
     font-style: italic;
     text-shadow: 0 3px 5px rgba($color: $--DarkColor, $alpha: 0.5);
   }
-  .button-title {
+  .carousel-caption {
     color: $--DarkColor;
     font-style: italic;
-    right: 0px;
-    bottom: 15px;
+    right: 300px;
+    bottom: 50px;
+    left: 0;
     text-shadow: 0 3px 5px rgba($color: $--DarkColor, $alpha: 0.5);
     letter-spacing: 5px;
   }
@@ -93,8 +94,8 @@ header {
   .arrow {
     color: $--DarkColor;
     position: absolute;
-    right: 50px;
-    bottom: 100px;
+    right: 25px;
+    bottom: 50px;
     font-size: $--Fz * 3;
     display: inline-block;
   }

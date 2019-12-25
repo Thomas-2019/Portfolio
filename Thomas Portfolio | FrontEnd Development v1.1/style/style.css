@@ -58,13 +58,19 @@ header .top-title {
   text-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
 }
 
-header .button-title {
+header .carousel-caption {
   color: #232323;
   font-style: italic;
-  right: 0px;
-  bottom: 15px;
+  right: 300px;
+  bottom: 50px;
+  left: 0;
   text-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
   letter-spacing: 5px;
+}
+
+header .carousel-caption h1 .animated .infinite {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 header .polygon {
@@ -77,8 +83,8 @@ header .polygon {
 header .arrow {
   color: #232323;
   position: absolute;
-  right: 50px;
-  bottom: 100px;
+  right: 25px;
+  bottom: 50px;
   font-size: 48px;
   display: inline-block;
 }
