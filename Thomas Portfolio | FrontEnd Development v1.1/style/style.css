@@ -6,6 +6,8 @@
 html {
   scroll-behavior: smooth;
   /*錨點滑動*/
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -13,6 +15,9 @@ body {
   font-family: "Montserrat", "Roboto", sans-serif;
   background-color: #ebeae9;
   color: #232323;
+  width: 100%;
+  height: 100%;
+  min-width: 530px;
 }
 
 .subtitle {
@@ -20,10 +25,6 @@ body {
   font-size: 32px;
   font-style: italic;
   font-weight: 600;
-}
-
-.page {
-  min-width: 500px;
 }
 
 /*==========nav==========*/
@@ -258,6 +259,11 @@ header .inset {
   }
 }
 
+.Skill .carousel-caption ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
 .Skill .carousel-caption li {
   list-style: none;
   background-color: rgba(255, 255, 255, 0.5);
@@ -287,14 +293,14 @@ header .inset {
 }
 
 /*==========Project==========*/
-.Project .project-bg-img {
+.Portfolio .project-bg-img {
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-.Project .project-card {
+.Portfolio .project-card {
   position: relative;
   width: 500px;
   height: 338px;
@@ -303,29 +309,29 @@ header .inset {
           box-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
 }
 
-.Project .project-card:hover .poster::before {
+.Portfolio .project-card:hover .poster::before {
   bottom: 0;
 }
 
-.Project .project-card:hover .poster img {
+.Portfolio .project-card:hover .poster img {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
 }
 
-.Project .project-card:hover .details {
+.Portfolio .project-card:hover .details {
   bottom: 0;
 }
 
-.Project .project-card:hover .info {
+.Portfolio .project-card:hover .info {
   bottom: 0;
 }
 
-.Project .project-card .poster {
+.Portfolio .project-card .poster {
   position: relative;
   overflow: hidden;
 }
 
-.Project .project-card .poster::before {
+.Portfolio .project-card .poster::before {
   content: "";
   display: block;
   position: absolute;
@@ -339,7 +345,7 @@ header .inset {
   transition: 1s ease;
 }
 
-.Project .project-card .poster img {
+.Portfolio .project-card .poster img {
   width: 100%;
   display: block;
   bottom: 50px;
@@ -347,7 +353,7 @@ header .inset {
   transition: 0.5s;
 }
 
-.Project .project-card .details {
+.Portfolio .project-card .details {
   position: absolute;
   width: 100%;
   height: 90%;
@@ -360,25 +366,25 @@ header .inset {
   z-index: 2;
 }
 
-.Project .project-card .details h4 {
+.Portfolio .project-card .details h4 {
   color: #fafafa;
   font-size: 24px;
 }
 
-.Project .project-card .details h4 a {
+.Portfolio .project-card .details h4 a {
   text-decoration: none;
 }
 
-.Project .project-card .details h4 .icon-github {
+.Portfolio .project-card .details h4 .icon-github {
   color: #fafafa;
   font-size: 24px;
 }
 
-.Project .project-card .details h4 .icon-github:hover {
+.Portfolio .project-card .details h4 .icon-github:hover {
   color: #4285f4;
 }
 
-.Project .project-card .info {
+.Portfolio .project-card .info {
   position: absolute;
   width: 100%;
   height: 80%;
@@ -391,13 +397,13 @@ header .inset {
   z-index: 1;
 }
 
-.Project .project-card .info li {
+.Portfolio .project-card .info li {
   list-style: none;
   color: #fafafa;
   font-size: 19.2px;
 }
 
-.Project .project-card .info li .icon-file-text2 {
+.Portfolio .project-card .info li .icon-file-text2 {
   padding-right: 10px;
   margin-bottom: 10px;
   display: inline-block;
@@ -407,6 +413,15 @@ header .inset {
 /*==========footer==========*/
 footer img {
   vertical-align: baseline;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 600px) {
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 footer h3,
@@ -418,17 +433,32 @@ footer .icon-cross {
   font-size: 24px;
 }
 
+@media (max-width: 600px) {
+  footer .icon-cross {
+    font-size: 16px;
+  }
+}
+
 footer a {
   padding: 0 10px;
   line-height: 50px;
   background-color: #fafafa;
   color: #232323;
   font-size: 32px;
+  border-radius: 50%;
 }
 
 footer a:hover {
   background-color: #232323;
   color: #fafafa;
+}
+
+@media (max-width: 600px) {
+  footer a {
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 40px;
+  }
 }
 
 footer ul {
@@ -438,7 +468,16 @@ footer ul {
 }
 
 footer li {
+  margin-left: 10px;
   list-style: none;
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  footer li {
+    margin-left: 5px;
+    height: 40px;
+  }
 }
 
 .loader {
