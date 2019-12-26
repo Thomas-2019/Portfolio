@@ -293,14 +293,14 @@ header .inset {
 }
 
 /*==========Project==========*/
-.Portfolio .project-bg-img {
+.Project .project-bg-img {
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-.Portfolio .project-card {
+.Project .project-card {
   position: relative;
   width: 500px;
   height: 338px;
@@ -309,29 +309,29 @@ header .inset {
           box-shadow: 0 3px 5px rgba(35, 35, 35, 0.5);
 }
 
-.Portfolio .project-card:hover .poster::before {
+.Project .project-card:hover .poster::before {
   bottom: 0;
 }
 
-.Portfolio .project-card:hover .poster img {
+.Project .project-card:hover .poster img {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
 }
 
-.Portfolio .project-card:hover .details {
+.Project .project-card:hover .details {
   bottom: 0;
 }
 
-.Portfolio .project-card:hover .info {
+.Project .project-card:hover .info {
   bottom: 0;
 }
 
-.Portfolio .project-card .poster {
+.Project .project-card .poster {
   position: relative;
   overflow: hidden;
 }
 
-.Portfolio .project-card .poster::before {
+.Project .project-card .poster::before {
   content: "";
   display: block;
   position: absolute;
@@ -345,7 +345,7 @@ header .inset {
   transition: 1s ease;
 }
 
-.Portfolio .project-card .poster img {
+.Project .project-card .poster img {
   width: 100%;
   display: block;
   bottom: 50px;
@@ -353,7 +353,7 @@ header .inset {
   transition: 0.5s;
 }
 
-.Portfolio .project-card .details {
+.Project .project-card .details {
   position: absolute;
   width: 100%;
   height: 90%;
@@ -366,25 +366,25 @@ header .inset {
   z-index: 2;
 }
 
-.Portfolio .project-card .details h4 {
+.Project .project-card .details h4 {
   color: #fafafa;
   font-size: 24px;
 }
 
-.Portfolio .project-card .details h4 a {
+.Project .project-card .details h4 a {
   text-decoration: none;
 }
 
-.Portfolio .project-card .details h4 .icon-github {
+.Project .project-card .details h4 .icon-github {
   color: #fafafa;
   font-size: 24px;
 }
 
-.Portfolio .project-card .details h4 .icon-github:hover {
+.Project .project-card .details h4 .icon-github:hover {
   color: #4285f4;
 }
 
-.Portfolio .project-card .info {
+.Project .project-card .info {
   position: absolute;
   width: 100%;
   height: 80%;
@@ -397,13 +397,13 @@ header .inset {
   z-index: 1;
 }
 
-.Portfolio .project-card .info li {
+.Project .project-card .info li {
   list-style: none;
   color: #fafafa;
   font-size: 19.2px;
 }
 
-.Portfolio .project-card .info li .icon-file-text2 {
+.Project .project-card .info li .icon-file-text2 {
   padding-right: 10px;
   margin-bottom: 10px;
   display: inline-block;
