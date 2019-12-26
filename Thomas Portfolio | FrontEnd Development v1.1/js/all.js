@@ -18,22 +18,6 @@
 //   });
 // })();
 
-/*nav-scroll*/
-(function() {
-  "use strict";
-
-  let preScroll = window.pageYOffset;
-  window.addEventListener("scroll", function() {
-    let curscorll = window.pageYOffset;
-    if (preScroll > curscorll) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-100px";
-    }
-    preScroll = curscorll;
-  });
-})();
-
 // // Scroll to specific values
 // (function() {
 //   function behavior(el){

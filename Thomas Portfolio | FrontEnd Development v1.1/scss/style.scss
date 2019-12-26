@@ -27,8 +27,7 @@ body {
 }
 
 .subtitle {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 30px 0;
   font-size: $--Fz * 2;
   font-style: italic;
   font-weight: 600;
@@ -98,18 +97,36 @@ header {
       letter-spacing: 5px;
       font-style: italic;
       text-shadow: $--Shadow;
+      font-size: $--Fz * 3;
+      @media (max-width: 800px) {
+        font-size: $--Fz * 2;
+        letter-spacing: 3px;
+      }
+      @media (max-width: 600px) {
+        font-size: $--Fz * 1.5;
+        letter-spacing: 1px;
+      }
     }
   }
   .carousel-caption {
     right: 300px;
     bottom: 50px;
     left: 0;
-    h1 {
+    .font-title {
       font-weight: 800;
       color: $--LightColor;
       font-style: italic;
       text-shadow: $--Shadow;
       letter-spacing: 5px;
+      font-size: $--Fz * 3;
+      @media (max-width: 800px) {
+        font-size: $--Fz * 1.5;
+        letter-spacing: 0px;
+      }
+      @media (max-width: 600px) {
+        font-size: $--Fz * 1;
+        letter-spacing: 0px;
+      }
     }
   }
   .arrow {
@@ -119,28 +136,11 @@ header {
     bottom: 50px;
     font-size: $--Fz * 3;
     display: inline-block;
-  }
-  .line {
-    position: relative;
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      background-color: #000000;
-      height: 100vh;
-    }
-    &::before {
-      left: 0;
-      top: 0;
-      border-left: 0.5px solid $--DarkColor;
-    }
-    &::after {
-      bottom: 0;
-      right: 0;
-      border-right: 0.5px solid $--DarkColor;
+    @media (max-width: 600px) {
+      font-size: $--Fz * 2;
     }
   }
+
   .inset {
     width: 100%;
     height: 100%;
@@ -150,10 +150,21 @@ header {
 
 /*==========about==========*/
 .About {
+  .resume-png {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%) rotate(-45deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .icon-cross {
     font-size: $--Fz * 1.5;
   }
-  .about-shadow {
+  .about-bg {
     width: 100%;
     height: 100%;
     background: #e9e2d0;
@@ -228,7 +239,10 @@ header {
     padding-bottom: 20px;
     color: $--DarkColor;
     text-align: center;
-
+    @media (max-width: 600px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
     li {
       list-style: none;
       background-color: rgba($color: #fff, $alpha: 0.5);
@@ -244,11 +258,20 @@ header {
     }
     i {
       font-size: $--Fz * 3;
+      @media (max-width: 600px) {
+        font-size: $--Fz * 2;
+      }
     }
   }
 }
 /*==========Project==========*/
 .Project {
+  .project-bg-img {
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
   .project-card {
     position: relative;
     width: 500px;
@@ -339,6 +362,39 @@ header {
         }
       }
     }
+  }
+}
+/*==========footer==========*/
+footer {
+  img {
+    vertical-align: baseline;
+  }
+  h3,
+  h5 {
+    color: $--LightColor;
+  }
+  .icon-cross {
+    font-size: $--Fz * 1.5;
+  }
+  a {
+    padding: 0 10px;
+    line-height: 50px;
+    background-color: $--LightColor;
+    color: $--DarkColor;
+    font-size: $--Fz * 2;
+    &:hover {
+      background-color: $--DarkColor;
+      color: $--LightColor;
+    }
+  }
+  ul {
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+  }
+  li {
+    list-style: none;
+    // height: 50px;
   }
 }
 .loader {
