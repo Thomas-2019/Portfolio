@@ -1,4 +1,4 @@
-/* fade out*/
+/* loading*/
 (function() {
   "use strict";
   function fadeOut(el) {
@@ -18,23 +18,16 @@
   });
 })();
 
-// // Scroll to specific values
-// (function() {
-//   function behavior(el){
-//     'use strict';
-//       window.scroll({
-//         top: 2500,
-//         left: 0,
-//         behavior: "smooth"
-//       });
-//       window.scrollBy({
-//         top: 100,
-//         left: 0,
-//         behavior: "smooth"
-//       });
-
-//       document.getElementById(el).scrollIntoView({ behavior: "smooth" });
-// }
-// behavior(about);
-
-// })();
+/* go-to-top-icon*/
+(function() {
+  "use strict";
+  const topIcon = document.querySelector(".go-to-top-icon");
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+      topIcon.classList.replace("d-none", "d-block");
+      console.log(topIcon);
+    } else {
+      topIcon.classList.replace("d-block", "d-none");
+    }
+  });
+})();
