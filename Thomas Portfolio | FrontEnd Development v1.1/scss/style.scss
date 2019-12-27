@@ -89,6 +89,11 @@ body {
 
 /*==========header==========*/
 header {
+  .carousel-item {
+    img {
+      border-radius: 10px;
+    }
+  }
   .top-title {
     z-index: 2;
     h1 {
