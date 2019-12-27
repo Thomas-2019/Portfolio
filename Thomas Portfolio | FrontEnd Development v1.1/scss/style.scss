@@ -169,12 +169,13 @@ header {
     width: 128px;
     height: 128px;
     position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-60%, -50%) rotate(-45deg);
+    left: 80%;
+    top: 55%;
+    transform: translate(-55%, -80%) rotate(45deg) scale(2.5);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: opacity(0.3);
   }
   .icon-cross {
     font-size: $--Fz * 1.5;
@@ -185,33 +186,34 @@ header {
     background: #e9e2d0;
   }
   .about-card {
-    width: 400px;
+    width: 100%;
     background: #262626;
     box-sizing: border-box;
     transition: 0.5s;
     &:hover {
-      ul {
-        height: 50px;
-      }
-      img {
-        transform: scale(1.3);
+      .imgBx {
+        span {
+          transform: scale(1.3);
+        }
       }
     }
     .imgBx {
-      width: 100%;
-      height: 200px;
       overflow: hidden;
-      img {
+      width: 100%;
+      height: 250px;
+      span {
+        width: 100%;
+        height: 100%;
+        display: block;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
-        transition: 5s;
+        transition: 3s;
         transform-origin: 50% 50%;
       }
     }
     a {
-      line-height: 50px;
+      display: block;
       background-color: $--LightColor;
       color: $--DarkColor;
       font-size: $--Fz * 2;
@@ -222,16 +224,13 @@ header {
     }
     ul {
       width: 100%;
-      height: 0;
+      height: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      transition: 0.5s;
     }
     li {
       list-style: none;
       width: 25%;
-      height: 50px;
     }
   }
 }

@@ -25,7 +25,6 @@
   window.addEventListener("scroll", function() {
     if (window.scrollY > 300) {
       topIcon.classList.replace("d-none", "d-block");
-      console.log(topIcon);
     } else {
       topIcon.classList.replace("d-block", "d-none");
     }
