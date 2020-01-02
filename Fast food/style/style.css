@@ -61,6 +61,8 @@ html,
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
   background-color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 /*======================navbar*/
@@ -194,12 +196,13 @@ body {
 .feature .a-subtitle {
   position: relative;
   text-align: center;
-  width: 200px;
+  width: 225px;
   height: 64px;
   margin-bottom: 30px;
 }
 
 .feature .a-subtitle h3 {
+  width: 225px;
   font-size: 20px;
   color: #3d1101;
   line-height: 32px;
@@ -291,12 +294,6 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 750px) {
-  .main .ma-col-img {
-    width: 50%;
-  }
-}
-
 .main .ma-col-img img {
   width: 100%;
   height: 100%;
@@ -312,7 +309,7 @@ body {
 @media (min-width: 750px) {
   .main .ma-col-content {
     padding: 45px 30px 30px 30px;
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -341,7 +338,7 @@ body {
 /*======================avatar*/
 .avatar {
   background-color: #f7f1e3;
-  padding: 50px 10px 57px;
+  padding: 50px 10px 50px;
 }
 
 .avatar h2 {
