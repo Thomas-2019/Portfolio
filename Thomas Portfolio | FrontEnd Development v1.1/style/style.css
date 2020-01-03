@@ -310,6 +310,7 @@ header .polygon-2 {
 }
 
 .Project .project-card {
+  margin: 0 auto;
   position: relative;
   width: 500px;
   height: 338px;
@@ -333,6 +334,11 @@ header .polygon-2 {
 
 .Project .project-card:hover .info {
   bottom: 0;
+}
+
+.Project .project-card:hover .info img {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .Project .project-card .poster {
@@ -365,7 +371,7 @@ header .polygon-2 {
 .Project .project-card .details {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 88%;
   bottom: -250px;
   left: 0;
   overflow: hidden;
