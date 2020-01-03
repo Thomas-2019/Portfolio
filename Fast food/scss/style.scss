@@ -4,6 +4,7 @@
 
 html,
 body {
+  scroll-behavior: smooth; /*錨點滑動*/
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
   background-color: #fff;
   max-width: 1024px;
@@ -41,7 +42,7 @@ $--bgc: #f7f1e3;
 }
 /*======================header*/
 .header {
-  .h-bg-img {
+  .h_bgImg {
     width: 100%;
     height: 420px;
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ $--bgc: #f7f1e3;
     background-size: cover;
     @include flex();
   }
-  .h-overlay {
+  .h_overlay {
     width: 300px;
     height: 194px;
     background-color: rgba($color: $--bark, $alpha: 0.5);
@@ -65,14 +66,14 @@ $--bgc: #f7f1e3;
     h2 {
       font-size: 36px;
     }
-    .h-subtitle {
+    .h_subtitle {
       margin: 20px 0 6px 6px;
       line-height: 45px;
       @include media-md {
         margin: 20px 22px 16px 22px;
       }
     }
-    .h-title {
+    .h_title {
       line-height: 21px;
       margin: 16px 54px 20px 54px;
       @include media-md {
@@ -88,13 +89,13 @@ $--bgc: #f7f1e3;
   width: 100%;
   height: 100%;
   @include flex(center, center, column);
-  .f-row {
+  .f_row {
     @include flex(center, center, column);
     @include media-md {
       @include flex(center, flex-start, row);
     }
   }
-  .a-subtitle {
+  .f_subtitle {
     position: relative;
     text-align: center;
     width: 225px;
@@ -111,7 +112,7 @@ $--bgc: #f7f1e3;
       z-index: 1;
       background-color: $--bgc;
     }
-    .line {
+    .f_line {
       border: 1px solid #979797;
       width: 461px;
       position: absolute;
@@ -120,11 +121,11 @@ $--bgc: #f7f1e3;
       transform: translate(-50%, -50%);
     }
   }
-  .a-card {
+  .f_card {
     width: 100%;
     height: 100%;
     padding: 30px;
-    .a-img {
+    .f_img {
       margin: 0 auto;
       width: 200px;
       height: 200px;
@@ -155,12 +156,12 @@ $--bgc: #f7f1e3;
 /*======================main*/
 .main {
   background: #3d1101;
-  .ma-row {
+  .m_row {
     @include media-md {
       @include flex(center, flex-start, row);
     }
   }
-  .ma-col-img {
+  .m_col_img {
     margin: 0 auto;
     width: 373px;
     height: 460px;
@@ -173,7 +174,7 @@ $--bgc: #f7f1e3;
       display: block;
     }
   }
-  .ma-col-content {
+  .m_col_info {
     padding: 30px;
     width: 330px;
     margin: 0 auto;
@@ -208,13 +209,13 @@ $--bgc: #f7f1e3;
     font-size: 24px;
     color: #3d1101;
   }
-  .av-row-flex {
+  .a_row {
     @include flex(center, center, column);
     @include media-md {
       @include flex();
     }
   }
-  .avatar-card {
+  .a_card {
     margin: 30px 0;
     padding-left: 80px;
     width: 300px;
@@ -257,7 +258,7 @@ $--bgc: #f7f1e3;
     padding: 50px 10px;
   }
 
-  .map-subtitle {
+  .m_subtitle {
     margin-bottom: 30px;
     @include media-md {
       margin-bottom: 38px;
@@ -268,13 +269,13 @@ $--bgc: #f7f1e3;
       color: #3d1101;
     }
   }
-  .map-row {
+  .m_row {
     @include flex(center, center, column);
     @include media-md {
       @include flex();
     }
   }
-  .map-col-map {
+  .m_col_map {
     width: 298px;
     height: 386px;
     margin-bottom: 30px;
@@ -305,7 +306,7 @@ $--bgc: #f7f1e3;
       }
     }
   }
-  .map-col-form {
+  .m_col_form {
     font-size: 14px;
     color: #3d1101;
     width: 300px;
@@ -313,10 +314,10 @@ $--bgc: #f7f1e3;
       width: 50%;
       padding-left: 20px;
     }
-    .form-name,
-    .form-tel,
-    .form-mail,
-    .form-count {
+    .form_name,
+    .form_tel,
+    .form_mail,
+    .form_count {
       input {
         width: 300px;
         margin-bottom: 12px;
@@ -348,18 +349,18 @@ $--bgc: #f7f1e3;
 footer {
   background-color: $--bgc;
   padding: 50px 10px;
-  .footer-row {
+  .f_row {
     @include media-md {
       @include flex(center, center);
     }
   }
-  .footer-about,
-  .footer-contact {
+  .f_info,
+  .f_contact {
     @include media-md {
       padding-right: 10px;
     }
   }
-  .footer-icon {
+  .f_icon {
     text-align: right;
     ul {
       a {
