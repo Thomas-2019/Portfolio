@@ -1,0 +1,8 @@
+.card {
+  box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.3);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    box-shadow: none;
+  }
+}
